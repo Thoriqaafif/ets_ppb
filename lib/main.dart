@@ -1,6 +1,4 @@
 import 'package:ets_ppb/page/home.dart';
-import 'package:ets_ppb/page/movie_detail.dart';
-import 'package:ets_ppb/page/movie_edit.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Home(),
+      home: const Home(),
     );
   }
 }

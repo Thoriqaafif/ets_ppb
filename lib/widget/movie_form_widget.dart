@@ -7,12 +7,12 @@ class MovieFormWidget extends StatelessWidget {
   final ValueChanged<String> onChangedDescription;
 
   const MovieFormWidget({
-    Key? key,
+    super.key,
     this.title = '',
     this.description = '',
     required this.onChangedTitle,
     required this.onChangedDescription,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) => SingleChildScrollView(

@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ets_ppb/model/movie.dart';
-import 'package:flutter/painting.dart';
 import 'package:intl/intl.dart';
 
 class MovieCardWidget extends StatelessWidget {
@@ -13,7 +11,7 @@ class MovieCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final time = DateFormat.yMMMd().format(movie.addedTime);
-    final height = 100.0;
+    const height = 100.0;
 
     return Card(
       color: Colors.white54,
@@ -23,7 +21,7 @@ class MovieCardWidget extends StatelessWidget {
         child: Row(
           children: [
             Image.asset(
-              'images/black-panther.jpg',
+              'images/black-panther.jpeg',
               height: 80.0,
             ),
             Column(

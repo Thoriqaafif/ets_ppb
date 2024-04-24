@@ -1,14 +1,14 @@
-final String tableName = 'movies';
+const String tableName = 'movies';
 
 class MovieFields {
   static final List<String> values = [
     id, title, description, addedTime
   ];
 
-  static final String id = '_id';
-  static final String title = 'title';
-  static final String description = 'description';
-  static final String addedTime = 'time';
+  static const String id = '_id';
+  static const String title = 'title';
+  static const String description = 'description';
+  static const String addedTime = 'time';
 }
 
 class Movie {
@@ -50,6 +50,6 @@ class Movie {
         id: id ?? this.id,
         title: title ?? this.title,
         description: description ?? this.description,
-        addedTime: createdTime ?? this.addedTime,
+        addedTime: createdTime ?? addedTime,
       );
 }

@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
           child: const Icon(Icons.add),
           onPressed: () async {
             await Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => MovieEdit()
+                builder: (context) => const MovieEdit()
             ));
 
             refreshMovies();

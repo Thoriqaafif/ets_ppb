@@ -1,4 +1,3 @@
-import 'dart:js_interop';
 
 import 'package:ets_ppb/database/movie_database.dart';
 import 'package:flutter/material.dart';
